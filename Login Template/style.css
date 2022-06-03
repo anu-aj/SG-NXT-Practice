@@ -1,0 +1,16 @@
+.tabs{
+    background-color: blueviolet;
+    border-width: 30px;
+}
+.t{
+    background-color: burlywood;
+    border-width: 30px;
+    border-color: white;
+}
+
+@media (min-width: 100px) and (max-width: 991.98px) {
+    .t{
+        width: fit-content;
+        height: fit-content;
+    }
+}
