@@ -21,3 +21,8 @@ Minor alterations in the UI
 # Mobile view:
 
 ![image](https://user-images.githubusercontent.com/53076732/172102618-8b7d22da-99c3-4d50-91fc-82450bb29012.png)
+
+# Recreated Assigned Template:
+
+![image](https://user-images.githubusercontent.com/53076732/172145901-3a78807c-a2d1-4e4a-8cc7-c4b0e95f9222.png)
+
