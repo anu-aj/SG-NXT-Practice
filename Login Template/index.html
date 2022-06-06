@@ -9,7 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>Login Template</title>
   </head>
-  <body>    
+  <body onload='document.form1.text1.focus()'>    
     <nav class="navbar navbar-dark bg-dark">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">SG NXT</a>
@@ -40,23 +40,28 @@
                 <div class="col"></div>          
               </div>
               <div class="row">
-              <div class="card g-3 p-4">
-              <div class="form-floating mb-3">
-                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+              <div class="card g-3 p-4"> 
+              <form action="">
+              <div class="form-floating mb-3" name="form1" action="#">
+                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com"  required>
                 <label for="floatingInput">Email address</label>
               </div>
               <div class="form-floating">
-                <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                <input type="password" class="form-control" id="floatingPassword" placeholder="Password" required>
                 <label for="floatingPassword">Password</label>
               </div>
-              <div class="text-end m-4">
-                <button type="button" class="btn btn-outline-dark text-center">Submit</button>
+              <div class="m-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Check me in</label>
               </div>
+              <div class="text-end m-4">
+                <button type="submit" class="btn btn-outline-dark text-center">Submit</button>
+              </div>
+              </form>
               <div class="footer text-muted text-center">
                 <small>  New to SG NXT? <a href="card-link">signup</a></small>
               </div>
-            </div>
-            
+                </div>
           </div>
             </div>  
             <div class="col-sm-0"></div>   
@@ -66,5 +71,6 @@
       </div>
     </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-  </body>
+  <script src="action.js"></script>
+</body>
 </html>
