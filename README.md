@@ -37,3 +37,7 @@ Minor alterations in the UI
 
 ![image](https://user-images.githubusercontent.com/53076732/172330472-139fed34-e673-49f5-b2a0-a3f581e34da4.png)
 
+STEPS:
+
+![image](https://user-images.githubusercontent.com/53076732/172330614-e484c5f3-df70-4ff7-bbbb-307d0d0eaa85.png)
+
