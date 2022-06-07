@@ -31,3 +31,9 @@ Minor alterations in the UI
 # Mobile view:
 
 ![image](https://user-images.githubusercontent.com/53076732/172148282-35533203-acc8-4980-bcb8-50ed18543031.png)
+
+## 2) Explore Microsoft Azure Chatbot options
+# [07-06-2022]
+
+![image](https://user-images.githubusercontent.com/53076732/172330472-139fed34-e673-49f5-b2a0-a3f581e34da4.png)
+
