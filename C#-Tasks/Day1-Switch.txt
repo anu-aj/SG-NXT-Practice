@@ -1,0 +1,48 @@
+using System;
+
+namespace if_else_practice
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            try
+            {
+                Console.WriteLine("Enter a random Num: ");
+                var i = int.Parse(Console.ReadLine());
+                switch ((0 <= i && i <= 10) ? 0 :
+                (10 < i && i <= 20) ? 1 : (i > 20 && i <= 30) ? 2: (i > 30 && i <= 40) ? 3 : (i < 0) ?4 :5)
+                {
+                    case 0:
+                        Console.WriteLine($"Entered value {i} is between 0 and 10");
+                        break;
+                    case 1:
+                        Console.WriteLine($"Entered value {i} is between 10 and 20");
+                        break;
+                    case 2:
+                        Console.WriteLine($"Entered value {i} is between 20 and 30");
+                        break;
+                    case 3:
+                        Console.WriteLine($"Entered value {i} is between 30 and 40");
+                        break;
+                    case 4:
+                        Console.WriteLine($"Entered value {i} is negative");
+                        break;
+                    
+                    default:
+                        Console.WriteLine($"Entered value {i} is not within the range");
+                        break;
+                }
+            }
+            catch
+            {
+                Console.Write("An Error has occured.\nError info : Data Type mismatch");
+            }
+            finally
+            {
+                Console.Write("Re-try with a different number.");
+            }
+
+        }
+    }
+}

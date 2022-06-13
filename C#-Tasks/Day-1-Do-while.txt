@@ -1,0 +1,66 @@
+using System;
+
+namespace if_else_practice
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            try
+            {
+                var i = 0;
+                var a = 0;
+                var b = 0;
+                do
+                {
+                    Console.WriteLine("\nSimple Math operations:\n1. Addition\n2. Subtraction\n3. Multiplication\n4. Division\n5.Exit\nEnter your choice:");
+                    i = int.Parse(Console.ReadLine());
+                   
+                    switch (i)
+                    {    
+                        case 1:
+                            Console.WriteLine("Enter two numbers:");
+                            a = int.Parse(Console.ReadLine());
+                            b = int.Parse(Console.ReadLine());
+                            Console.WriteLine("Sum of {0} and {1} is {2} ",a,b,a+b);
+                            break;
+                        case 2:
+                            Console.WriteLine("Enter two numbers:");
+                            a = int.Parse(Console.ReadLine());
+                            b = int.Parse(Console.ReadLine());
+                            Console.WriteLine("Difference of {0} and {1} is {2} ", a, b, a - b);
+                            break;
+                        case 3:
+                            Console.WriteLine("Enter two numbers:");
+                            a = int.Parse(Console.ReadLine());
+                            b = int.Parse(Console.ReadLine());
+                            Console.WriteLine("Product of {0} and {1} is {2} ", a, b, a*b);
+                            break;
+                        case 4:
+                            Console.WriteLine("Enter two numbers:");
+                            a = int.Parse(Console.ReadLine());
+                            b = int.Parse(Console.ReadLine());
+                            Console.WriteLine("N of {0} and {1} is {2} ", a, b, a / b);
+                            break;
+                        case 5:
+                            Console.WriteLine("Exiting....");
+                            break;
+                        default:
+                            Console.WriteLine("Wrong Option");
+                            break;
+                    }
+
+                } while (i>=1 && i<5);
+            }
+            catch(Exception e)
+            {
+                Console.Write("An Error has occured.\nError info : "+e);
+            }
+            finally
+            {
+                Console.Write("Re-try with a different number.");
+            }
+
+        }
+    }
+}

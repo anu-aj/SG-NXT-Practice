@@ -1,0 +1,36 @@
+using System;
+
+namespace if_else_practice
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            try
+            {
+                Console.WriteLine("Enter N:");
+                var n = int.Parse(Console.ReadLine());
+                
+                for (int i = 1; i <= n; i++)
+                {
+                    int j = 1;
+                    while (j<=i)
+                    {
+                        Console.Write("*");
+                        j = j + 1;
+                    }
+                    Console.WriteLine("");
+                }
+            }
+            catch
+            {
+                Console.Write("An Error has occured.\nError info : Data Type mismatch");
+            }
+            finally
+            {
+                Console.Write("Re-try with a different number.");
+            }
+
+        }
+    }
+}
